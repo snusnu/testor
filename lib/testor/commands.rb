@@ -1,0 +1,10 @@
+require 'testor/commands/bundle'
+require 'testor/commands/gem'
+require 'testor/commands/implode'
+require 'testor/commands/list'
+require 'testor/commands/release'
+require 'testor/commands/rvm'
+require 'testor/commands/spec'
+require 'testor/commands/status'
+require 'testor/commands/sync'
+
