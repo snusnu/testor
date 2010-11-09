@@ -28,30 +28,6 @@ module Testor
         ::Gem::Specification.load(working_dir.join(gemspec_file)).version.to_s
       end
 
-      class Install < Gem
-
-        def command
-          "#{super} gem build #{gemspec_file}; #{super} gem install #{gem}"
-        end
-
-        def action
-          'Installing'
-        end
-
-      end
-
-      class Uninstall < Gem
-
-        def command
-          "#{super} gem uninstall #{repo.name} --version #{version}"
-        end
-
-        def action
-          'Uninstalling'
-        end
-
-      end
-
     end # class Gem
   end # class Command
 end # module Testor

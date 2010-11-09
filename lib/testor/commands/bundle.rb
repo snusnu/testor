@@ -72,32 +72,7 @@ module Testor
         end
       end
 
-      class Install < Bundle
-
-        def bundle_command
-          'install'
-        end
-
-      end
-
-      class Update < Bundle
-
-        def bundle_command
-          'update'
-        end
-
-      end
-
-      class Show < Bundle
-
-        def bundle_command
-          'show'
-        end
-
-      end
-
     end # class Bundle
-
   end # class Command
 end # module Testor
 
