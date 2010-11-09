@@ -1,3 +1,5 @@
+require 'fileutils'
+
 module Testor
 
   class Command
