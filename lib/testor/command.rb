@@ -48,7 +48,7 @@ module Testor
         end
         unless pretend?
           sleep(timeout)
-          system(command)
+          shell(command)
         end
         after
       else
@@ -56,6 +56,10 @@ module Testor
           log(command, "SKIPPED! - #{explanation}")
         end
       end
+    end
+
+    def shell(command)
+      system(command)
     end
 
     # overwrite in subclasses
