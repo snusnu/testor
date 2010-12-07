@@ -1,1 +1,4 @@
 dm-dev.yml
+.bundle
+Gemfile.lock
+coverage
